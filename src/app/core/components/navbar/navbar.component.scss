@@ -1,4 +1,87 @@
 .navbar{
     height: 76px;
-    background-color: black;
+    background-color: var(--dark-main-color);
+    padding-left: 100px;
+    padding-right: 100px;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    
+    .logo{
+        margin-top: 5px;
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        img{
+            width: 200px;
+            height: 43px;
+        }
+    } 
+
+    .menu{
+        align-content: center;
+
+        ul{
+            
+          display: flex;
+          flex-direction: row;
+
+          li{
+            padding: 20px;
+
+            &:hover{
+                cursor: pointer;
+            }
+          }   
+        } 
+    }
+
+    .contact{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .headset-icon{
+            border-radius: 20px;
+            background-color: var(--icon-background);
+            width: 35px;
+            height: 35px;
+            align-content: center;
+            text-align: center;
+            margin-right: 10px;
+
+            fa-icon{
+                color: var(--bright-main-color);
+            }
+        }
+
+        p{
+            font-size: large;         
+        }
+
+        .cart-button{
+            margin-left: 20px;
+            display: flex;
+            justify-content: center;
+            column-gap: 10px;
+            align-items: center;
+            background-color: var(--primary-color);
+            border: none;
+            border-radius: 5px;
+            height: 33px;
+            width: 93px;
+            
+            &:hover{
+                cursor: pointer;
+                opacity: 0.9;
+            }
+
+            p{
+                color: var(--dark-main-color);
+                padding-bottom: 2px;
+            }
+        }
+    }
 }

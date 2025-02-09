@@ -29,10 +29,15 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets/",
+                "output": "/assets/"
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles/index.scss"
             ],
             "scripts": [],
             "server": "src/main.server.ts",
@@ -93,10 +98,15 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets/",
+                "output": "/assets/"
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles/index.scss"
             ],
             "scripts": []
           }

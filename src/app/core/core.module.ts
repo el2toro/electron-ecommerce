@@ -5,7 +5,7 @@ import { CoreRoutingModule } from "./core.routing.module";
     declarations: [
     ],
     imports: [
-      CoreRoutingModule,
+      CoreRoutingModule
     ],
     providers: [],
     exports: [
