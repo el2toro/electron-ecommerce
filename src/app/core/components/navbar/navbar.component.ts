@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faHeadset } from '@fortawesome/free-solid-svg-icons';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-navbar',
@@ -12,6 +13,7 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 export class NavbarComponent implements OnInit {
   faHeadset = faHeadset;
   faCartShopping = faCartShopping;
+  faBars = faBars;
 
   constructor() { }
 

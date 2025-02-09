@@ -57,8 +57,9 @@
             }
         }
 
-        p{
-            font-size: large;         
+        .contact-number{
+            font-size: large;   
+            width: 170px;     
         }
 
         .cart-button{
@@ -84,4 +85,99 @@
             }
         }
     }
+
+    .mobile-menu {
+        display: none;
+        padding-left: 20px;
+
+        .checkbtn {
+            font-size: 1.5rem;
+            color: var(--bright-main-color);
+            cursor: pointer;
+           }
+
+           .nav-mobile {
+            display: none;
+           }
+
+           .nav-mobile {
+            position: absolute;
+            top: 4.5rem;
+            right: 0;
+            background: var(--dark-main-color);
+            z-index: 1;
+            width: 200px;
+           }
+           .nav-mobile a {
+            color: var(--bright-main-color);
+            padding: 1rem 1.5rem;
+            display: block;
+           }
+           
+    }
+
+    /*We’ll use a clever trick with a checkbox input to toggle the visibility of the menu. 
+    When the checkbox is checked, we’ll show the menu using the 
+    #check:checked ~ .nav-mobile selector. */
+
+    #check:checked ~ .nav-mobile {
+        display: block;
+       }
+
+      
+}
+
+@media only screen and (max-width: 1200px) {
+    .contact{
+        .headset-icon{
+            display: none;
+        }
+
+        .contact-number{
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 1077px) {
+    .navbar{
+        grid-template-columns: 4fr 4fr 1fr;
+
+        .contact{
+            justify-content: right;
+        }
+
+        .menu{
+            display: none;
+        }
+
+        .logo{
+            width: 180px;
+        }
+
+        .mobile-menu{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .navbar{
+        padding-left: 20px;
+        padding-right: 20px;
+
+        .logo{
+            display: none;
+        }
+
+        .contact{
+            justify-content: left;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    
 }
