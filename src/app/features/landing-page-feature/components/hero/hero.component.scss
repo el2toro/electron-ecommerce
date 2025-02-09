@@ -1,0 +1,80 @@
+.hero{
+    .banner{
+        display: grid;
+        height: 80vh;
+        background-color: #FEEEDF;
+
+        .first-banner{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+          .banner-image{
+            img{
+               height: 80vh;
+               padding-left: 100px;
+            }
+          }
+
+          .description{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            row-gap: 40px;
+
+            h6{
+              color: var(--secondary-color);
+              font-size: 1.2rem;
+              font-weight: bold;
+              margin-bottom: -20px;
+            }
+
+            h1{
+                color: var(--dark-main-color);
+                font-size: 4rem;
+                font-weight: bold;
+            }
+
+            button{
+                color: var(--dark-main-color);
+                font-size: 1rem;
+                font-weight: bold;
+                font-family: var(--font-family-base);
+                background-color: var(--primary-color);
+                width: 145px;
+                height: 51px;
+                border-radius: 5px;
+
+                &:hover{
+                    cursor: pointer;
+                    opacity: 0.9;
+                }
+            }
+          }
+        }
+    }
+
+    .dots{
+        display: flex;
+        position: absolute;
+        gap: 10px;
+        width: 100px;
+        right: 50%;
+        left: 50%;
+        top: 85%;
+
+        .dot-item{
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            border: 1px solid var(--bright-main-color);
+
+            &:hover{
+                cursor: pointer;
+            }
+
+            &:first-child{
+                background-color: var(--bright-main-color);
+            }
+        }
+    }
+}
