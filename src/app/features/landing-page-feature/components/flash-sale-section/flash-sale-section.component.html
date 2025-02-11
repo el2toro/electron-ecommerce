@@ -1,0 +1,86 @@
+<div class="flash-sale">
+  <div class="categories">
+     <div class="category" *ngFor="let category of categories">
+      <div class="category-image">
+        <img src="assets/images/hero.png" alt="category-image">
+      </div>
+      <p>{{ category }}</p>
+     </div>
+  </div>
+
+  <div class="get-it-fast">
+    <p>GET IT FAST</p>
+    <div class="description">
+      <h1>Flash Sale</h1>
+      <p>Diam sceresque eleifend ultricies odispiscing interdum</p>
+      <div class="line"></div>
+    </div>
+  </div>
+
+  <div class="flash-sale-items">
+    <div class="flash-sale-item-counter-down">
+    <div class="flash-sale-image">
+      <img src="assets/images/hero.png" alt="flash">
+    </div>
+     <h3>Flash Sale</h3>
+     <p>Diam sceresque eleifend ultricies odispiscing interdum</p>
+     <div class="counter-down" *ngIf="(timeLeft$ | async) as time; else sorry">
+       <div class="hours">
+         <h3>{{time.hoursToDday}}</h3>
+         <p>Hours</p>
+       </div>
+       <div class="minutes">
+        <h3>{{time.minutesToDday}}</h3>
+        <p>Minutes</p>
+       </div>
+       <div class="seconds">
+        <h3>{{time.secondsToDday}}</h3>
+        <p>Seconds</p>
+       </div>
+     </div>
+    </div>
+
+    <ng-template #sorry>
+      Sorry, something went wrong...
+    </ng-template>
+
+    <div class="flash-sale-item">
+      <div class="badge">
+        <p>Sale!</p>
+      </div>
+      <img src="assets/images/hero.png" alt="flash">
+      <p>Laptop Multimedia CZ75 - 16ing 5120</p>
+      <div class="price">
+        <p>500$</p>
+        <p>390$</p>
+      </div>
+      <button>Add to cart</button>
+    </div>
+
+    <div class="flash-sale-item">
+      <div class="badge">
+        <p>Sale!</p>
+      </div>
+      <img src="assets/images/hero.png" alt="flash">
+      <p>Laptop Multimedia CZ75 - 16ing 5120</p>
+      <div class="price">
+        <p>500$</p>
+        <p>390$</p>
+      </div>
+      <button>Add to cart</button>
+    </div>
+
+    <div class="flash-sale-item">
+      <div class="badge">
+        <p>Sale!</p>
+      </div>
+      <img src="assets/images/hero.png" alt="flash">
+      <p>Laptop Multimedia CZ75 - 16ing 5120</p>
+      <div class="price">
+        <p>500$</p>
+        <p>390$</p>
+      </div>
+      <button>Add to cart</button>
+    </div>
+  </div>
+</div>

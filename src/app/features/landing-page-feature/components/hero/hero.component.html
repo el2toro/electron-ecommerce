@@ -1,6 +1,6 @@
 <div class="hero">
 <div class="banner">
- <div class="first-banner">
+ <div class="first-banner show-banner">
    <div class="banner-image">
     <img src="assets/images/hero.png" alt="banner-image">
    </div>
@@ -11,15 +11,25 @@
     <button>Shop Now</button>
    </div>
  </div>
- <!-- <div class="second-banner"></div>
- <div class="third-banner"></div> -->
+ <div class="second-banner hide-banner">
+  <div class="banner-image">
+    <img src="assets/images/hero.png" alt="banner-image">
+   </div>
+
+   <div class="description">
+    <h6>SPECIAL DISCOUNT FOR SECOND BANNER</h6>
+    <H1>This is a great one</H1>
+    <!-- <button>Shop Now</button> -->
+   </div>
+ </div>
+ <!-- <div class="third-banner"></div> -->
 </div>
 <div class="buttons">
 </div>
 
 <div class="dots">
- <div class="dot-item"></div>
- <div class="dot-item"></div>
- <div class="dot-item"></div>
+ <div class="dot-item dot-active" (click)="onClick(0)"></div>
+ <div class="dot-item" (click)="onClick(1)"></div>
+ <div class="dot-item" (click)="onClick(3)"></div>
 </div>
 </div>
