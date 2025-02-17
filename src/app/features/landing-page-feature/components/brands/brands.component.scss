@@ -1,0 +1,42 @@
+.brands{
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    h3{
+        font-family: var(--font-family-base);
+        font-size: 1rem;
+        font-weight: bold;
+        color: var(--secondary-color);
+        padding-bottom: 20px;
+    }
+
+    .shop-by-brands{
+        display: flex;
+        text-align: center;
+        align-items: center;
+
+        h1{
+            color: var(--dark-main-color);
+            font-size: 3rem;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        .line{
+           height: 1px;
+           background-color: #CCCCCC;
+           width: 100%;
+        }
+    }
+
+    .brand-items{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+
+        img{
+            width: 182.5px;
+        }
+    }
+}
