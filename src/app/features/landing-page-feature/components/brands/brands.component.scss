@@ -31,12 +31,33 @@
     }
 
     .brand-items{
-        display: flex;
-        justify-content: space-between;
         padding-top: 50px;
+       
+       overflow: hidden;
+       //width: 800px;
+       
 
-        img{
-            width: 182.5px;
+        
+
+        .slide-track {
+            animation: scroll 40s linear infinite;
+            display: flex;
+            gap: 50px;
+            //justify-content: space-between;
+            width: calc(250px * 6);
+
+            .slide {
+                img{
+                    width: 182.5px;
+                }
+            }
         }
+        
+        
     }
+}
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
 }

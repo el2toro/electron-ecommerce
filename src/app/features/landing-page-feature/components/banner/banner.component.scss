@@ -1,0 +1,51 @@
+.banner{
+    display: flex;
+    background-color:#8C1540;
+    padding: 0px 100px;
+
+    .details{
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        align-content: center;
+
+        h3{
+          font-size: 2.5rem;
+          color: var(--bright-main-color);
+          font-weight: bold;
+        } 
+
+        h1{
+            font-size: 6rem;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        p{
+            font-size: 1.15rem;
+            color: var(--bright-main-color);
+            font-weight: 300;
+        }
+
+        button{
+            font-size: 1rem;
+            color: var(--dark-main-color);
+            font-weight: bold;
+            background-color: var(--primary-color);
+            border-radius: 5px;
+            width: 154px;
+            height: 51px;
+            font-family: var(--font-family-base);
+        }
+    }
+
+    .image{
+        height: 500px;
+        width: 705px;
+        img{
+            //height: 500px;
+            object-fit: cover;
+        }
+    }
+}
