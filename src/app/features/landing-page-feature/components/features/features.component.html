@@ -1,3 +1,28 @@
-<p>
-  features works!
-</p>
+<div class="features">
+  <h3>FEATURES</h3>
+  
+  <div class="featured-offers">
+    <h1>Our Featured Offers</h1>
+    <p>Diam scelerisque eleifend ultricies adipiscing interdum</p>
+    <div class="line"></div>
+  </div>
+
+  <div class="offers">
+   <div class="offer" *ngFor="let offer of offers">
+    <div class="badge">
+      <p>Sale!</p>
+    </div>
+     <div class="image">
+      <img src="assets/images/offer1.png" alt="image">
+     </div>
+     <div class="offer-description">
+       <p>Laptop Multimedia CZ50 - 16inc 5120</p>
+       <div class="price">
+         <p>$500</p>
+         <p>$399</p>
+       </div>
+       <button>Add to cart</button>
+     </div>
+   </div>
+  </div>
+</div> 

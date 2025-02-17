@@ -1,0 +1,129 @@
+.features{
+    padding: 70px 100px;
+    //TODO: background color gradient in angle
+
+    h3{
+        color: var(--secondary-color);
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .featured-offers{
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+
+        h1{
+          color: var(--dark-main-color);
+          font-weight: bold;
+          font-size: 3rem;
+          width: 100%;
+          margin-right: 30px;
+        }
+
+        p{
+          color: #777777;
+          width: 100%;
+          font-size: 1rem;
+          font-weight: 300;
+        }
+
+        .line{
+            height: 1px;
+            width: 70%;
+            background-color: #CCCCCC;
+        }
+    }
+
+    .offers{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 30px;
+        margin-top: 50px;
+
+        .offer{
+            border: 1px solid #CCCCCC;
+            border-radius: 0px 0px 10px 10px;
+
+            .badge{
+                background-color:#8C1540;
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                position: relative;
+                z-index: 5;
+                align-content: center;
+                text-align: center;
+                margin-left: 85%;
+                margin-top: 5px;
+
+                p{
+                 font-size: 11px;
+                 color: var(--bright-main-color);
+                 font-weight: bold;
+                }
+            }
+
+            .image{
+
+              img{
+                object-fit: contain;
+                width: 270px;
+                height: 221px;
+              }
+            }
+
+            .offer-description{
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+                align-items: center;
+
+                p{
+                 font-size: 1.15rem;
+                 color: var(--dark-main-color);
+                 font-weight: 300;
+                }
+
+                .price{
+                    display: flex;
+                    justify-content: center;
+
+                    p{
+                        font-size: 1.25rem;
+                        color:#777777;
+                        text-decoration: line-through;
+                    }
+
+                    p+p{
+                        font-size: 1.25rem;
+                        color:#8C1540;
+                        font-weight: bold;
+                        text-decoration: none;
+                    }
+                }
+
+                button{
+                  font-family: var(--font-family-base);
+                  color: var(--dark-main-color);
+                  font-weight: bold;
+                  font-size: 1rem;
+                  border-radius: 5px;
+                  background-color: var(--primary-color);
+                  width: 121px;
+                  height: 33px;
+
+                  &:hover{
+                    cursor: pointer;
+                    opacity: 0.9;
+                  }
+                }
+            }
+        }
+    }
+}
