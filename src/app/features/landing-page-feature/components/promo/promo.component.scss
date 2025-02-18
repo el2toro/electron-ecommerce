@@ -1,0 +1,172 @@
+.promo{
+    padding: 70px 100px;
+    //TODO: background color gradient in angle
+
+    h3{
+        color: var(--secondary-color);
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .promo-title{
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+
+        h1{
+          color: var(--dark-main-color);
+          font-weight: bold;
+          font-size: 3rem;
+          width: 100%;
+          margin-right: 30px;
+        }
+
+        p{
+          color: #777777;
+          width: 100%;
+          font-size: 1rem;
+          font-weight: 300;
+        }
+
+        .line{
+            height: 1px;
+            width: 70%;
+            background-color: #CCCCCC;
+        }
+    }
+
+    .promo-products{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 30px;
+        padding-top: 70px;
+
+        .promo-product-view-all{
+            padding: 0px 50px;
+            background-color: #dddada;
+            border-radius: 10px;
+            align-content: center;
+            background-image: url('https://images.unsplash.com/photo-1483181957632-8bda974cbc91?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            text-align: center;
+            
+                
+                
+                h3{
+                    font-size: 1.5rem;
+                    color: var(--bright-main-color);
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                 }
+     
+                 p{
+                     font-size: 1rem;
+                     color: var(--bright-main-color);
+                     font-weight: 300;
+                     margin-bottom: 10px;
+                 }
+     
+                 button{
+                     font-size: 1rem;
+                     color: var(--bright-main-color);
+                     font-weight: bold;
+                     font-family: var(--font-family-base);
+                     border: 1px solid var(--bright-main-color);
+                     border-radius: 5px;
+                     width: 185px;
+                     height: 51px;
+
+                     &:hover{
+                        cursor: pointer;
+                        opacity: 0.9;
+                     }
+                 }
+        }
+
+        .promo-product-view-all::before{
+            
+        }
+
+        .promo-product{
+            border: 1px solid #CCCCCC;
+            border-radius: 0px 0px 10px 10px;
+
+            .badge{
+                background-color:#8C1540;
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                position: relative;
+                z-index: 5;
+                align-content: center;
+                text-align: center;
+                margin-left: 85%;
+                margin-top: 5px;
+
+                p{
+                 font-size: 11px;
+                 color: var(--bright-main-color);
+                 font-weight: bold;
+                }
+            }
+
+            .image{
+
+              img{
+                object-fit: contain;
+                width: 270px;
+                height: 221px;
+              }
+            }
+
+            .promo-description{
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+                align-items: center;
+
+                p{
+                 font-size: 1.15rem;
+                 color: var(--dark-main-color);
+                 font-weight: 300;
+                }
+
+                .price{
+                    display: flex;
+                    justify-content: center;
+
+                    p{
+                        font-size: 1.25rem;
+                        color:#777777;
+                        text-decoration: line-through;
+                    }
+
+                    p+p{
+                        font-size: 1.25rem;
+                        color:#8C1540;
+                        font-weight: bold;
+                        text-decoration: none;
+                    }
+                }
+
+                button{
+                  font-family: var(--font-family-base);
+                  color: var(--dark-main-color);
+                  font-weight: bold;
+                  font-size: 1rem;
+                  border-radius: 5px;
+                  background-color: var(--primary-color);
+                  width: 121px;
+                  height: 33px;
+
+                  &:hover{
+                    cursor: pointer;
+                    opacity: 0.9;
+                  }
+                }
+            }
+        }
+    }
+}

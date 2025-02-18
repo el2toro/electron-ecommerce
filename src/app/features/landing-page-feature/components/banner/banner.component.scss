@@ -37,6 +37,11 @@
             width: 154px;
             height: 51px;
             font-family: var(--font-family-base);
+
+            &:hover{
+                cursor: pointer;
+                opacity: 0.9;
+            }
         }
     }
 
