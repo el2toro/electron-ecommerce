@@ -1,0 +1,21 @@
+<div class="news">
+  <h3>NEWS</h3>
+  
+  <div class="news-title">
+    <h1>Stay Update With Us</h1>
+    <p>Diam scelerisque eleifend ultricies adipiscing interdum</p>
+    <div class="line"></div>
+  </div>
+
+  <div class="news-items">
+   <div class="news-item" *ngFor="let newsImage of news">
+     <div class="image">
+        <img src="assets/images/{{newsImage}}.jpg" alt="image">
+     </div>
+     <div class="description">
+       <p>July 7, 2025 No Comments</p>
+       <h3>Diam sceler eleifend ultricies adipiscing interdum</h3>
+     </div>
+   </div>
+  </div>
+</div>
