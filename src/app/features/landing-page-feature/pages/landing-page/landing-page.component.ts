@@ -6,12 +6,14 @@ import { NewProductComponent } from "../../components/new-product/new-product.co
 import { FeaturesComponent } from "../../components/features/features.component";
 import { BannerComponent } from "../../components/banner/banner.component";
 import { PromoComponent } from "../../components/promo/promo.component";
+import { NewsComponent } from "../../components/news/news.component";
+import { UtilitiesComponent } from "../../components/utilities/utilities.component";
 
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.scss'],
-  imports: [HeroComponent, FlashSaleSectionComponent, BrandsComponent, NewProductComponent, FeaturesComponent, BannerComponent, PromoComponent]
+  imports: [HeroComponent, FlashSaleSectionComponent, BrandsComponent, NewProductComponent, FeaturesComponent, BannerComponent, PromoComponent, NewsComponent, UtilitiesComponent]
 })
 export class LandingPageComponent implements OnInit {
 

@@ -1,0 +1,22 @@
+.utilities{
+    display: flex;
+    justify-content: space-between;
+    background-color: #171717;
+    padding: 20px 100px;
+
+    .utility{
+        
+        text-align: center;
+       
+        
+      img{
+        width: 48px;
+        background-color: aliceblue;
+      }
+
+      p{
+          font-size: 1.25rem;
+          font-weight: bold;
+      }
+    }
+}
