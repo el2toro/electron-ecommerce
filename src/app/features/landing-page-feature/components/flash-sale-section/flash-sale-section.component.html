@@ -2,9 +2,9 @@
   <div class="categories">
      <div class="category" *ngFor="let category of categories">
       <div class="category-image">
-        <img src="assets/images/hero.png" alt="category-image">
+        <img src="assets/images/{{category.categoryImage}}" alt="category-image">
       </div>
-      <p>{{ category }}</p>
+      <p>{{ category.categoryName }}</p>
      </div>
   </div>
 
@@ -20,7 +20,7 @@
   <div class="flash-sale-items">
     <div class="flash-sale-item-counter-down">
     <div class="flash-sale-image">
-      <img src="assets/images/hero.png" alt="flash">
+      <img src="assets/svg/lightning.svg" alt="flash">
     </div>
      <h3>Flash Sale</h3>
      <p>Diam sceresque eleifend ultricies odispiscing interdum</p>
@@ -48,7 +48,7 @@
       <div class="badge">
         <p>Sale!</p>
       </div>
-      <img src="assets/images/hero.png" alt="flash">
+      <img src="assets/images/laptop.png" alt="flash">
       <p>Laptop Multimedia CZ75 - 16ing 5120</p>
       <div class="price">
         <p>500$</p>
@@ -61,7 +61,7 @@
       <div class="badge">
         <p>Sale!</p>
       </div>
-      <img src="assets/images/hero.png" alt="flash">
+      <img src="assets/images/laptop.png" alt="flash">
       <p>Laptop Multimedia CZ75 - 16ing 5120</p>
       <div class="price">
         <p>500$</p>
@@ -74,7 +74,7 @@
       <div class="badge">
         <p>Sale!</p>
       </div>
-      <img src="assets/images/hero.png" alt="flash">
+      <img src="assets/images/laptop.png" alt="flash">
       <p>Laptop Multimedia CZ75 - 16ing 5120</p>
       <div class="price">
         <p>500$</p>

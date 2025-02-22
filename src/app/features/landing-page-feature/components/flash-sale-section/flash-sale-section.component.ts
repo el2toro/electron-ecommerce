@@ -2,6 +2,11 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { interval, map, Observable, shareReplay } from 'rxjs';
 
+interface Category{
+  categoryName: string;
+  categoryImage: string;
+}
+
 interface timeComponents {
   secondsToDday: number;
   minutesToDday: number;
@@ -18,7 +23,8 @@ interface timeComponents {
 
 export class FlashSaleSectionComponent implements OnInit {
   public timeLeft$!: Observable<timeComponents>;
-  categories = ['Mobiles', 'Televisions', 'Laptops', 'Audio', 'Air Conditioner', 'Refrigerators', 'Washings', 'Kitchen'];
+  categories = <Category[]>[];
+  
   zero = 0;
   constructor() { 
     this.timeLeft$ = interval(1000).pipe(
@@ -28,6 +34,7 @@ export class FlashSaleSectionComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.initCategories();
   }
 
   calcDateDiff(endDay: Date = new Date(2025, 2, 11)): timeComponents {
@@ -60,5 +67,17 @@ export class FlashSaleSectionComponent implements OnInit {
       Math.floor(timeDifference / milliSecondsInASecond) % secondsInAMinute;
   
     return { secondsToDday, minutesToDday, hoursToDday };
+  }
+
+  initCategories(){
+    this.categories = [
+      { categoryName: 'Mobiles', categoryImage: 'phone.png' },
+      { categoryName: 'Televisions', categoryImage: 'tv.png' },
+      { categoryName: 'Laptops', categoryImage: 'laptop.png' },
+      { categoryName: 'Air Conditioner', categoryImage: 'conditioner.png' },
+      { categoryName: 'Refrigerators', categoryImage: 'refrigerator.png' },
+      { categoryName: 'Washings', categoryImage: 'washing-machine.png' },
+      { categoryName: 'Kitchen', categoryImage: 'kitchen.jpeg' }
+    ]
   }
 }
