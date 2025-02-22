@@ -23,10 +23,10 @@ export class UtilitiesComponent implements OnInit {
   initUtilities(){
     this.utilities = [
       { image: 'support', title: 'Support Center' },
-      { image: 'utility2', title: 'Order Status' },
-      { image: 'utility3', title: 'Store Pickup' },
-      { image: 'utility4', title: 'Price Match Guarantee' },
-      { image: 'utility5', title: 'Returns & Exchanges' }
+      { image: 'order_status', title: 'Order Status' },
+      { image: 'store', title: 'Store Pickup' },
+      { image: 'price', title: 'Best Price' },
+      { image: 'return', title: 'Returns & Exchanges' }
     ]
   }
 }
