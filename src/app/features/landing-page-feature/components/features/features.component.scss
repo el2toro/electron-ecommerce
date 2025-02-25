@@ -22,7 +22,7 @@
         }
 
         p{
-          color: #777777;
+          color: var(--text-primary-color);
           width: 100%;
           font-size: 1rem;
           font-weight: 300;
@@ -31,7 +31,7 @@
         .line{
             height: 1px;
             width: 70%;
-            background-color: #CCCCCC;
+            background-color: var(--background-secondary-color);
         }
     }
 
@@ -45,11 +45,11 @@
         margin-top: 50px;
 
         .offer{
-            border: 1px solid #CCCCCC;
+            border: 1px solid var(--background-secondary-color);
             border-radius: 0px 0px 10px 10px;
 
             .badge{
-                background-color:#8C1540;
+                background-color: var(--badge-color);
                 width: 40px;
                 height: 40px;
                 border-radius: 20px;
@@ -94,13 +94,13 @@
 
                     p{
                         font-size: 1.25rem;
-                        color:#777777;
+                        color:var(--text-primary-color);
                         text-decoration: line-through;
                     }
 
                     p+p{
                         font-size: 1.25rem;
-                        color:#8C1540;
+                        color:var(--badge-color);
                         font-weight: bold;
                         text-decoration: none;
                     }

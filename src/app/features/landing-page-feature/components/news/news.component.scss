@@ -22,7 +22,7 @@
         }
 
         p{
-          color: #777777;
+          color: var(--text-primary-color);
           width: 100%;
           font-size: 1rem;
           font-weight: 300;
@@ -31,7 +31,7 @@
         .line{
             height: 1px;
             width: 60%;
-            background-color: #CCCCCC;
+            background-color: var(--background-secondary-color);
         }
     }
 
@@ -55,7 +55,7 @@
 
             .description{
                 padding: 20px;
-                background-color: #F8F8F8;
+                background-color: var(--bright-background);
                 border-radius: 0px 0px 10px 10px;
 
 

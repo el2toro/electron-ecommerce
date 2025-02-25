@@ -2,7 +2,7 @@
     .banner{
         display: grid;
         height: 80vh;
-        background-color: #FEEEDF;
+        background-color: var(--bright-primary-color);
 
         .first-banner, .second-banner{
 
@@ -21,7 +21,6 @@
             animation: fadeInAnimation ease 3s;
             animation-iteration-count: 1;
             animation-fill-mode:backwards;
-            //animation-direction:alternate;
 
             h6{
               color: var(--secondary-color);
@@ -102,7 +101,6 @@
         background-color: transparent;
     }
 }
-
 
 
 @media only screen and (max-width: 1200px) {

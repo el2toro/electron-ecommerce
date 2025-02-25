@@ -22,7 +22,7 @@
         }
 
         p{
-          color: #777777;
+          color: var(--text-primary-color);
           width: 100%;
           font-size: 1rem;
           font-weight: 300;
@@ -31,7 +31,7 @@
         .line{
             height: 1px;
             width: 70%;
-            background-color: #CCCCCC;
+            background-color: var(--background-secondary-color);
         }
     }
 
@@ -43,14 +43,12 @@
 
         .promo-product-view-all{
             padding: 0px 50px;
-            background-color: #dddada;
+            background-color: var(--product-background);
             border-radius: 10px;
             align-content: center;
             background-image: url('https://images.unsplash.com/photo-1483181957632-8bda974cbc91?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
             background-size: cover;
-            text-align: center;
-            
-                
+            text-align: center;      
                 
                 h3{
                     font-size: 1.5rem;
@@ -83,16 +81,12 @@
                  }
         }
 
-        .promo-product-view-all::before{
-            
-        }
-
         .promo-product{
-            border: 1px solid #CCCCCC;
+            border: 1px solid var(--background-secondary-color);
             border-radius: 0px 0px 10px 10px;
 
             .badge{
-                background-color:#8C1540;
+                background-color:var(--badge-color);
                 width: 40px;
                 height: 40px;
                 border-radius: 20px;
@@ -111,7 +105,6 @@
             }
 
             .image{
-
               img{
                 object-fit: contain;
               }
@@ -137,13 +130,13 @@
 
                     p{
                         font-size: 1.25rem;
-                        color:#777777;
+                        color: var(--text-primary-color);
                         text-decoration: line-through;
                     }
 
                     p+p{
                         font-size: 1.25rem;
-                        color:#8C1540;
+                        color:var(--badge-color);
                         font-weight: bold;
                         text-decoration: none;
                     }

@@ -25,25 +25,19 @@
 
         .line{
            height: 1px;
-           background-color: #CCCCCC;
+           background-color: var(--background-secondary-color);
            width: 100%;
         }
     }
 
     .brand-items{
-        padding-top: 50px;
-       
+       padding-top: 50px;  
        overflow: hidden;
-       //width: 800px;
-       
-
-        
-
+     
         .slide-track {
             animation: scroll 40s linear infinite;
             display: flex;
             gap: 50px;
-            //justify-content: space-between;
             width: calc(250px * 6);
 
             .slide {
@@ -51,9 +45,7 @@
                     width: 182.5px;
                 }
             }
-        }
-        
-        
+        }   
     }
 }
 

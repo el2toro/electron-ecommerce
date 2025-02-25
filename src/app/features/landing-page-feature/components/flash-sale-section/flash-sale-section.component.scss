@@ -14,7 +14,7 @@
              width: 120px;
              height: 120px;
              border-radius: 60px;
-             background-color: #F8F8F8;
+             background-color: var(--bright-background);
              align-content: center;
              padding: 20px;
              display: flex;
@@ -55,13 +55,13 @@
             }
 
             p{
-                color: #777777;
+                color: var(--text-primary-color);
                 font-size: 1rem;
                 font-weight: 400;
             }
 
             .line{
-                background-color: #777777;
+                background-color: var(--text-primary-color);
                 opacity: 0.5;
                 height: 1px;
                 width: 100%;
@@ -78,7 +78,7 @@
         .flash-sale-item-counter-down{
             display: flex;
             flex-direction: column;
-            background-color: #F8F8F8;
+            background-color: var(--bright-background);
             border-radius: 10px;
             text-align: center;
             row-gap: 30px;
@@ -105,7 +105,7 @@
           }
 
           p{
-             color: #777777;
+             color: var(--text-primary-color);
              font-size: 1rem;
              font-weight: 300;
           }
@@ -117,7 +117,7 @@
             justify-content: center;
 
             .hours, .minutes, .seconds{
-                background-color: #8C1540;
+                background-color: var(--badge-color);
                 border-radius: 5px;
                 padding: 10px;
 
@@ -137,7 +137,7 @@
         .flash-sale-item{
             display: flex;
             flex-direction: column;
-            border: 1px solid #777777;
+            border: 1px solid var(--text-primary-color);
             border-radius: 10px;
             padding: 20px;
             padding-top: 5px;
@@ -145,7 +145,7 @@
             align-items: center;
 
             .badge{
-                background-color:#8C1540;
+                background-color:var(--badge-color);
                 width: 40px;
                 height: 40px;
                 border-radius: 20px;
@@ -179,7 +179,7 @@
 
              p{
                text-decoration: line-through;
-               color: #777777;
+               color: var(--text-primary-color);
                font-size: 1.25rem;
              }
              p+p{
